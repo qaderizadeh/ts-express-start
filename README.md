@@ -1,38 +1,34 @@
 # Instructions
 
-`npm i -g typescript`
+`npm init`
 
-`tsc --version`
+`npm i express`
+
+`npm i -D typescript ts-node nodemon @types/node @types/express prettier`
 
 `tsc --init`
 
 edit `tsconfig.json`
 
-  rootDir: ./src
+  `rootDir: ./src`
   
-  outDir: ./dist
+  `outDir: ./dist`
   
-  moduleResolution: node
+  `moduleResolution: node`
   
-
-`npm init`
-
-`npm i express`
-
-`npm i -D typescript ts-node nodemon @types/node @types/express`
 
 
 edit `package.json`
 
-  start: noe ./dist/app.js
+  `start: node ./dist/app.js`
   
-  dev: nodemon src/app.ts
+  `dev: nodemon src/app.ts`
   
-  build: tsc -p .
+  `build: tsc -p .`
+  
+  `test: jest`
   
 
 `npx eslint --init`
-
-`npm i -D --save-exact prettier`
 
 `echo {}>.prettierrc.json`
