@@ -16,4 +16,6 @@
 
 `node -e "require('fs').writeFileSync('./.prettierrc.json',JSON.stringify({endOfLine:'auto'}));"`
 
+`npx prettier --write .`
+
 https://github.com/github/gitignore/raw/main/Node.gitignore
