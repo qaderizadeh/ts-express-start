@@ -30,7 +30,7 @@ edit `package.json`
 
   `start: node ./dist/app.js`
   
-  `dev: nodemon src/app.ts`
+  `dev: nodemon ./src/app.ts`
   
   `build: tsc -p .`
   
