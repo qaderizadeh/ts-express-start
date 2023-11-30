@@ -10,11 +10,19 @@
 
 edit `tsconfig.json`
 
-  `rootDir: ./src`
-  
-  `outDir: ./dist`
-  
-  `moduleResolution: node`
+  `{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
+}`
   
 
 
