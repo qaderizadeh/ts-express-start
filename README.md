@@ -28,13 +28,12 @@ edit `tsconfig.json`
 
 edit `package.json`
 
-  `start: node ./dist/app.js`
-  
-  `dev: nodemon ./src/app.ts`
-  
-  `build: tsc -p .`
-  
-  `test: jest`
+  `"scripts": {
+    "start": "node ./dist/app.js",
+    "dev": "nodemon ./src/app.t",
+    "build": "tsc -p .",
+    "test": "jest"
+  }`
   
 
 `npx eslint --init`
