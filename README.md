@@ -8,23 +8,7 @@
 
 `tsc --init`
 
-edit `tsconfig.json`
-
-  `{
-  "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
-    "rootDir": "./src",
-    "moduleResolution": "node",
-    "outDir": "./dist",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
-  }
-}`
-  
-
+`node -e "require('fs').writeFileSync('tsconfig.json',JSON.stringify({compilerOptions:{target:'es2016',module:'commonjs',rootDir:'./src',moduleResolution:'node',outDir:'./dist',esModuleInterop:true,forceConsistentCasingInFileNames:true,strict:true,skipLibCheck: true}}))"`
 
 edit `package.json`
 
