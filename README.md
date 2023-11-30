@@ -14,6 +14,6 @@
 
 `npx eslint --init`
 
-`echo { "endOfLine": "auto" } > .prettierrc.json`
+`node -e "require('fs').writeFileSync('./.prettierrc.json',JSON.stringify({endOfLine:'auto'}));"`
 
 https://github.com/github/gitignore/raw/main/Node.gitignore
