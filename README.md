@@ -31,4 +31,4 @@ edit `package.json`
 
 `npx eslint --init`
 
-`echo {}>.prettierrc.json`
+`echo { "endOfLine": "auto" } > .prettierrc.json`
