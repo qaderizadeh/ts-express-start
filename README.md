@@ -4,7 +4,7 @@
 
 `npm i express`
 
-`npm i -D typescript ts-node nodemon @types/node @types/express prettier`
+`npm i -D typescript ts-node nodemon @types/node @types/express prettier jest`
 
 `tsc --init`
 
