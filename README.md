@@ -32,3 +32,5 @@ edit `package.json`
 `npx eslint --init`
 
 `echo { "endOfLine": "auto" } > .prettierrc.json`
+
+https://github.com/github/gitignore/raw/main/Node.gitignore
