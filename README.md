@@ -18,4 +18,4 @@
 
 `npx prettier --write .`
 
-https://github.com/github/gitignore/raw/main/Node.gitignore
+`node -e "require('https').get('https://raw.githubusercontent.com/github/gitignore/main/Node.gitignore',t=>{let i=require('fs').createWriteStream('./.gitignore');t.pipe(i),i.on('finish',()=>{i.close()})});"`
