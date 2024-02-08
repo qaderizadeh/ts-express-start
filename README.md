@@ -21,7 +21,7 @@
 `node -e "require('https').get('https://raw.githubusercontent.com/github/gitignore/main/Node.gitignore',t=>{let i=require('fs').createWriteStream('./.gitignore');t.pipe(i),i.on('finish',()=>{i.close()})});"`
 
 
-# with Yarn
+# with yarn
 
 ```bash
 yarn init -y
@@ -34,7 +34,7 @@ node -e "require('fs').writeFileSync('./tsconfig.json',JSON.stringify({compilerO
 
 node -e "require('fs').writeFileSync('./package.json',JSON.stringify({...require('./package.json'),scripts:{start:'node ./dist/app.js',dev:'nodemon ./src/app.t',build:'tsc -p .',test:'jest'}}));"
 
-node -e "require('fs').writeFileSync('./tsconfig.json',JSON.stringify({env:{browser:true,es2021:true},extends:['eslint:recommended','plugin:@typescript-eslint/recommended'],parser:'@typescript-eslint/parser',parserOptions:{ecmaVersion:'latest',sourceType:'module'},plugins:['@typescript-eslint'],rules:{}}))"
+node -e "require('fs').writeFileSync('./.eslintrc.json',JSON.stringify({env:{browser:true,es2021:true},extends:['eslint:recommended','plugin:@typescript-eslint/recommended'],parser:'@typescript-eslint/parser',parserOptions:{ecmaVersion:'latest',sourceType:'module'},plugins:['@typescript-eslint'],rules:{}}))"
 
 node -e "require('fs').writeFileSync('./.prettierrc.json',JSON.stringify({endOfLine:'auto'}));"
 
